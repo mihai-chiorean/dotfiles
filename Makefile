@@ -1,8 +1,7 @@
 default: install-packages link-config set-shell sync-vim
 
 install-packages: add-repositories
-	sudo pacman -Sy yaourt infinality-bundle
-	yaourt -S --needed --noconfirm `cat packages.txt`
+	sudo apt-get install -y `cat packages.txt`
 
 add-repositories: add-infinality-key
 	cat repositories.txt | sudo tee -a /etc/pacman.conf
