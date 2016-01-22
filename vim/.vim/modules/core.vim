@@ -2,6 +2,9 @@
 " plugins depend on it during start up.
 set backspace=indent,eol,start
 
+" fix shell
+set shell=bash
+
 " Enable invisible characters.
 set list
 
@@ -30,4 +33,4 @@ set completeopt-=preview
 set sessionoptions=blank,curdir,folds,help,tabpages,winsize
 
 " Improve encryption.
-set cryptmethod=blowfish2
+set cryptmethod=blowfish
