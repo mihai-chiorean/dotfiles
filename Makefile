@@ -1,7 +1,7 @@
 default: install-packages link-config set-shell sync-vim
 
 install-packages: add-repositories
-	sudo pacman -Sy yaourt termite infinality-bundle
+	sudo pacman -Sy yaourt infinality-bundle
 	yaourt -S --needed --noconfirm `cat packages.txt`
 
 add-repositories: add-infinality-key
