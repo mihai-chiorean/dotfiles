@@ -1,3 +1,8 @@
+pacman-pm
+dirmngr
+vim-syntax-go
+vim-addon-manager
+rng-tools
 cmake
 compton
 cowsay
