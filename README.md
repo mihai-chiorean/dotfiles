@@ -1,3 +1,12 @@
+# Set up vim #
+
+Need vim >=7.4.
+
+`brew install vim`
+`make sync-vim`
+
+
+
 # dotfiles [![Join the chat at https://gitter.im/Wolfy87/dotfiles](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Wolfy87/dotfiles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This repository consists of configuration for any tools I use within my [Arch Linux][arch] and [Vim][] development environment. I use my terminal as my IDE, so there's a lot of tools I depend on. I link all of this configuration into my home directory using [stow][].
