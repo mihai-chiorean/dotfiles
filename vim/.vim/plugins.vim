@@ -8,6 +8,7 @@ function! BuildYCM(info)
   endif
 endfunction
 
+Plug 'godlygeek/tabular'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'Keithbsmiley/tmux.vim'
 Plug 'Lokaltog/vim-distinguished'
@@ -70,3 +71,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/SyntaxComplete'
 Plug 'walm/jshint.vim'
+Plug 'fatih/vim-go'
+Plug 'flazz/vim-colorschemes'
+
