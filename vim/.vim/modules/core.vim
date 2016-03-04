@@ -30,4 +30,4 @@ set completeopt-=preview
 set sessionoptions=blank,curdir,folds,help,tabpages,winsize
 
 " Improve encryption.
-set cryptmethod=blowfish2
+set cryptmethod=blowfish
