@@ -1,20 +1,15 @@
-default: install-packages link-config set-shell sync-vim
+default: install-packages sync-tmux sync-vim
 
-install-packages: add-repositories
-	sudo pacman -Sy yaourt termite infinality-bundle
-	yaourt -S --needed --noconfirm `cat packages.txt`
+install-packages: 
+	./install.sh
 
-add-repositories: add-infinality-key
-	cat repositories.txt | sudo tee -a /etc/pacman.conf
-
-add-infinality-key:
-	sudo dirmngr &
-	sleep 1
-	sudo pacman-key -r 962DDE58
-	sudo pacman-key --lsign-key 962DDE58
-
-link-config:
-	stow --restow `ls -d */`
+sync-tmux:
+	test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+	cp ./tmux/.tmux.conf ~/.tmux.conf
+	tmux has-session -t install || tmux new-session -d -s install
+	tmux source ~/.tmux.conf
+	~/.tmux/plugins/tpm/bin/install_plugins
+	tmux kill-session -t install
 
 set-shell:
 	chsh -s `which fish`
