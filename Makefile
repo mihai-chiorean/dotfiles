@@ -1,7 +1,10 @@
-default: install-packages sync-tmux sync-vim
+default: sync-repo install-packages sync-tmux sync-vim
 
 install-packages: 
 	./install.sh
+
+sync-repo:
+	git pull --rebase
 
 sync-tmux:
 	test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
