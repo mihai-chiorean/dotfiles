@@ -74,4 +74,4 @@ Plug 'vim-scripts/SyntaxComplete'
 Plug 'walm/jshint.vim'
 Plug 'fatih/vim-go'
 Plug 'flazz/vim-colorschemes'
-
+Plug 'tpope/vim-obsession'
