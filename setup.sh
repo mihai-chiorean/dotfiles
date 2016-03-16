@@ -5,3 +5,4 @@ if [ ! -f $HOME/Library/LaunchAgents ]; then
 fi
 
 cp local.job.plist $HOME/Library/LaunchAgents
+launchctl start "local.dotfiles"
