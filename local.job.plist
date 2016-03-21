@@ -5,7 +5,7 @@
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>PATH</key>
-		<string>/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/mihai/bin</string>
+		<string>/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin</string>
 	</dict>
 	<key>Label</key>
 	<string>local.dotfiles</string>
@@ -27,6 +27,6 @@
 		</dict>
 	</array>
 	<key>WorkingDirectory</key>
-	<string>/Users/mihai/dotfiles</string>
+	<string>$HOME/dotfiles</string>
 </dict>
 </plist>
