@@ -12,5 +12,3 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under GNU/Linux platformi
     echo 'install.sh: linux'
 fi
-
-pip install flake8
