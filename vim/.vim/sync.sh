@@ -2,6 +2,7 @@
 
 git clone https://github.com/Lokaltog/vim-distinguished.git ~/vim-distinguished
 
+cp -R vim/.vim ~
 if [ ! -f ~/.vim/colors ]; then
     mkdir -p ~/.vim/colors
 fi
