@@ -1,0 +1,16 @@
+"""
+""" General configs
+"""
+set sw=2                   " shift width
+set number ruler           " show line numbers
+set hlsearch               " highlight search matches
+set ai                     " auto indent
+set et                     " expandtab http://vimhelp.appspot.com/options.txt.html#%27expandtab%27
+set paste                  " don't auto-indent on paste
+set tabstop=2              " spaces for a tab press
+set incsearch              " incremental searching on
+set cursorline             " highlight cursor line
+set linebreak              " line wrapping http://vimhelp.appspot.com/options.txt.html#%27linebreak%27
+set nowrap                 " no wrap to screen size
+
+

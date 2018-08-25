@@ -1,0 +1,24 @@
+"""
+""" Navigation
+"""
+
+""" insert mode
+
+" (i) move to beginning of line
+inoremap <C-e> <Esc>A
+" (i) move to end of line
+inoremap <C-a> <Esc>I
+" (n) duplicate line
+nnoremap <C-d> yyp
+
+""" normal mode
+" move in splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" quick save
+nnoremap <C-s> :update<CR>
+nnoremap <Leader>x :x<CR>
+

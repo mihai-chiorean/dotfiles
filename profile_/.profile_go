@@ -1,0 +1,18 @@
+#file managed by chef
+VER=1.10.3
+[ -z "$GOROOT" ] && export GOROOT="/usr/local/Cellar/go/$VER/libexec"
+# GOPATH
+[ -z "$GOPATH" ] && export GOPATH="/Users/mihai/Uber/Go"
+
+export PATH="$PATH:$GOPATH/bin"
+
+gotogo () {
+    cd $GOPATH/src/code.uber.internal/$1
+}
+# go to uber Go workspace
+alias gogo="gotogo"
+
+goclone () {
+    mkdir -p $GOPATH/src/code.uber.internal/$1
+    git clone gitolite@code.uber.internal:$1 $GOPATH/src/code.uber.internal/$1 --recursive
+}

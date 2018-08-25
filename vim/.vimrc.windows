@@ -1,0 +1,9 @@
+"""
+""" Windows and splits
+"""
+set splitbelow
+set splitright
+
+" vv to generate new vertical split
+nnoremap <silent> vv <C-w>v
+

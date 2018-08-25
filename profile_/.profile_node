@@ -1,0 +1,20 @@
+
+VERSION="v8.11.3"
+export NODE_ENV=development
+
+export PATH=$PATH:"/Users/mihai/.nvm/${VERSION}/bin:node_modules/.bin"
+
+export NVM_DIR="$HOME/.nvm"
+# shellcheck disable=SC1091
+# shellcheck source=/home/mihai/.nvm/nvm.sh
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# shellcheck disable=SC1091
+# shellcheck source=/home/mihai/.nvm/bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+nvm use ${VERSION}
+[ -x "$(command -v yarn)" ] || [ "$(brew install yarn --ignore-dependencies)" ]
+
+# enforces NodeJS workspace by dir including node version
+# [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
