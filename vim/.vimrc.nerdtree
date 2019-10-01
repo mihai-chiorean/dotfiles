@@ -1,5 +1,6 @@
 """ NERD Tree
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeShowIgnoredStatus = 1

@@ -1,0 +1,16 @@
+""" Plugin
+Plug 'leafgarland/typescript-vim'
+
+""" indent
+let g:typescript_indent_disable = 1
+let g:typescript_opfirst='\%([<>=,?^%|*/&]\|\([-:+]\)\1\@!\|!=\|in\%(stanceof\)\=\>\)'
+
+""" compiler
+" let g:typescript_compiler_binary = 'tsc'
+" let g:typescript_compiler_options = ''
+
+autocmd FileType typescript :set makeprg=tsc
+
+""" quickfix window
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow

@@ -1,3 +1,6 @@
+Plug 'yegappan/greplace'
+Plug 'altercation/vim-colors-solarized'
+
 """
 """ General configs
 """
@@ -12,5 +15,4 @@ set incsearch              " incremental searching on
 set cursorline             " highlight cursor line
 set linebreak              " line wrapping http://vimhelp.appspot.com/options.txt.html#%27linebreak%27
 set nowrap                 " no wrap to screen size
-
 
